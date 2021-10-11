@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3590EE32714CBB900ADA2F8 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590EE22714CBB900ADA2F8 /* Tests_iOS.swift */; };
+		C3590EE52714CBB900ADA2F8 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590EE42714CBB900ADA2F8 /* Tests_iOSLaunchTests.swift */; };
+		C3590EEF2714CBB900ADA2F8 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590EEE2714CBB900ADA2F8 /* Tests_macOS.swift */; };
+		C3590EF12714CBB900ADA2F8 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590EF02714CBB900ADA2F8 /* Tests_macOSLaunchTests.swift */; };
+		C3590EF22714CBB900ADA2F8 /* bloggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590ECA2714CBB700ADA2F8 /* bloggerApp.swift */; };
+		C3590EF32714CBB900ADA2F8 /* bloggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590ECA2714CBB700ADA2F8 /* bloggerApp.swift */; };
+		C3590EF42714CBB900ADA2F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590ECB2714CBB700ADA2F8 /* ContentView.swift */; };
+		C3590EF52714CBB900ADA2F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590ECB2714CBB700ADA2F8 /* ContentView.swift */; };
+		C3590EF62714CBB900ADA2F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3590ECC2714CBB900ADA2F8 /* Assets.xcassets */; };
+		C3590EF72714CBB900ADA2F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3590ECC2714CBB900ADA2F8 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3590EDF2714CBB900ADA2F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3590EC52714CBB700ADA2F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3590ED02714CBB900ADA2F8;
+			remoteInfo = "blogger (iOS)";
+		};
+		C3590EEB2714CBB900ADA2F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3590EC52714CBB700ADA2F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3590ED62714CBB900ADA2F8;
+			remoteInfo = "blogger (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3590ECA2714CBB700ADA2F8 /* bloggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bloggerApp.swift; sourceTree = "<group>"; };
+		C3590ECB2714CBB700ADA2F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C3590ECC2714CBB900ADA2F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3590ED12714CBB900ADA2F8 /* blogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3590ED72714CBB900ADA2F8 /* blogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3590ED92714CBB900ADA2F8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		C3590EDE2714CBB900ADA2F8 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3590EE22714CBB900ADA2F8 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		C3590EE42714CBB900ADA2F8 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		C3590EEA2714CBB900ADA2F8 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3590EEE2714CBB900ADA2F8 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		C3590EF02714CBB900ADA2F8 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3590ECE2714CBB900ADA2F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3590ED42714CBB900ADA2F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3590EDB2714CBB900ADA2F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3590EE72714CBB900ADA2F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3590EC42714CBB700ADA2F8 = {
+			isa = PBXGroup;
+			children = (
+				C3590EC92714CBB700ADA2F8 /* Shared */,
+				C3590ED82714CBB900ADA2F8 /* macOS */,
+				C3590EE12714CBB900ADA2F8 /* Tests iOS */,
+				C3590EED2714CBB900ADA2F8 /* Tests macOS */,
+				C3590ED22714CBB900ADA2F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3590EC92714CBB700ADA2F8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C3590ECA2714CBB700ADA2F8 /* bloggerApp.swift */,
+				C3590ECB2714CBB700ADA2F8 /* ContentView.swift */,
+				C3590ECC2714CBB900ADA2F8 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C3590ED22714CBB900ADA2F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3590ED12714CBB900ADA2F8 /* blogger.app */,
+				C3590ED72714CBB900ADA2F8 /* blogger.app */,
+				C3590EDE2714CBB900ADA2F8 /* Tests iOS.xctest */,
+				C3590EEA2714CBB900ADA2F8 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3590ED82714CBB900ADA2F8 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				C3590ED92714CBB900ADA2F8 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		C3590EE12714CBB900ADA2F8 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C3590EE22714CBB900ADA2F8 /* Tests_iOS.swift */,
+				C3590EE42714CBB900ADA2F8 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		C3590EED2714CBB900ADA2F8 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				C3590EEE2714CBB900ADA2F8 /* Tests_macOS.swift */,
+				C3590EF02714CBB900ADA2F8 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3590ED02714CBB900ADA2F8 /* blogger (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3590EFA2714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "blogger (iOS)" */;
+			buildPhases = (
+				C3590ECD2714CBB900ADA2F8 /* Sources */,
+				C3590ECE2714CBB900ADA2F8 /* Frameworks */,
+				C3590ECF2714CBB900ADA2F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "blogger (iOS)";
+			productName = "blogger (iOS)";
+			productReference = C3590ED12714CBB900ADA2F8 /* blogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3590ED62714CBB900ADA2F8 /* blogger (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3590EFD2714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "blogger (macOS)" */;
+			buildPhases = (
+				C3590ED32714CBB900ADA2F8 /* Sources */,
+				C3590ED42714CBB900ADA2F8 /* Frameworks */,
+				C3590ED52714CBB900ADA2F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "blogger (macOS)";
+			productName = "blogger (macOS)";
+			productReference = C3590ED72714CBB900ADA2F8 /* blogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3590EDD2714CBB900ADA2F8 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3590F002714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				C3590EDA2714CBB900ADA2F8 /* Sources */,
+				C3590EDB2714CBB900ADA2F8 /* Frameworks */,
+				C3590EDC2714CBB900ADA2F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3590EE02714CBB900ADA2F8 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = C3590EDE2714CBB900ADA2F8 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C3590EE92714CBB900ADA2F8 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3590F032714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				C3590EE62714CBB900ADA2F8 /* Sources */,
+				C3590EE72714CBB900ADA2F8 /* Frameworks */,
+				C3590EE82714CBB900ADA2F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3590EEC2714CBB900ADA2F8 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = C3590EEA2714CBB900ADA2F8 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3590EC52714CBB700ADA2F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					C3590ED02714CBB900ADA2F8 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					C3590ED62714CBB900ADA2F8 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					C3590EDD2714CBB900ADA2F8 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C3590ED02714CBB900ADA2F8;
+					};
+					C3590EE92714CBB900ADA2F8 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C3590ED62714CBB900ADA2F8;
+					};
+				};
+			};
+			buildConfigurationList = C3590EC82714CBB700ADA2F8 /* Build configuration list for PBXProject "blogger" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3590EC42714CBB700ADA2F8;
+			productRefGroup = C3590ED22714CBB900ADA2F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3590ED02714CBB900ADA2F8 /* blogger (iOS) */,
+				C3590ED62714CBB900ADA2F8 /* blogger (macOS) */,
+				C3590EDD2714CBB900ADA2F8 /* Tests iOS */,
+				C3590EE92714CBB900ADA2F8 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3590ECF2714CBB900ADA2F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3590EF62714CBB900ADA2F8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3590ED52714CBB900ADA2F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3590EF72714CBB900ADA2F8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3590EDC2714CBB900ADA2F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3590EE82714CBB900ADA2F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3590ECD2714CBB900ADA2F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3590EF42714CBB900ADA2F8 /* ContentView.swift in Sources */,
+				C3590EF22714CBB900ADA2F8 /* bloggerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3590ED32714CBB900ADA2F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3590EF52714CBB900ADA2F8 /* ContentView.swift in Sources */,
+				C3590EF32714CBB900ADA2F8 /* bloggerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3590EDA2714CBB900ADA2F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3590EE52714CBB900ADA2F8 /* Tests_iOSLaunchTests.swift in Sources */,
+				C3590EE32714CBB900ADA2F8 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3590EE62714CBB900ADA2F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3590EF12714CBB900ADA2F8 /* Tests_macOSLaunchTests.swift in Sources */,
+				C3590EEF2714CBB900ADA2F8 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3590EE02714CBB900ADA2F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3590ED02714CBB900ADA2F8 /* blogger (iOS) */;
+			targetProxy = C3590EDF2714CBB900ADA2F8 /* PBXContainerItemProxy */;
+		};
+		C3590EEC2714CBB900ADA2F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3590ED62714CBB900ADA2F8 /* blogger (macOS) */;
+			targetProxy = C3590EEB2714CBB900ADA2F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C3590EF82714CBB900ADA2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3590EF92714CBB900ADA2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C3590EFB2714CBB900ADA2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2262CQKPZT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.connorblack.blogger;
+				PRODUCT_NAME = blogger;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3590EFC2714CBB900ADA2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2262CQKPZT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.connorblack.blogger;
+				PRODUCT_NAME = blogger;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3590EFE2714CBB900ADA2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2262CQKPZT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.connorblack.blogger;
+				PRODUCT_NAME = blogger;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C3590EFF2714CBB900ADA2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2262CQKPZT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.connorblack.blogger;
+				PRODUCT_NAME = blogger;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C3590F012714CBB900ADA2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2262CQKPZT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connorblack.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "blogger (iOS)";
+			};
+			name = Debug;
+		};
+		C3590F022714CBB900ADA2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2262CQKPZT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connorblack.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "blogger (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3590F042714CBB900ADA2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2262CQKPZT;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connorblack.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "blogger (macOS)";
+			};
+			name = Debug;
+		};
+		C3590F052714CBB900ADA2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2262CQKPZT;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.connorblack.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "blogger (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3590EC82714CBB700ADA2F8 /* Build configuration list for PBXProject "blogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3590EF82714CBB900ADA2F8 /* Debug */,
+				C3590EF92714CBB900ADA2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3590EFA2714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "blogger (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3590EFB2714CBB900ADA2F8 /* Debug */,
+				C3590EFC2714CBB900ADA2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3590EFD2714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "blogger (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3590EFE2714CBB900ADA2F8 /* Debug */,
+				C3590EFF2714CBB900ADA2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3590F002714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3590F012714CBB900ADA2F8 /* Debug */,
+				C3590F022714CBB900ADA2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3590F032714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3590F042714CBB900ADA2F8 /* Debug */,
+				C3590F052714CBB900ADA2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3590EC52714CBB700ADA2F8 /* Project object */;
+}
