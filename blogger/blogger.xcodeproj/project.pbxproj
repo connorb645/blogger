@@ -7,240 +7,415 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C3590EE32714CBB900ADA2F8 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590EE22714CBB900ADA2F8 /* Tests_iOS.swift */; };
-		C3590EE52714CBB900ADA2F8 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590EE42714CBB900ADA2F8 /* Tests_iOSLaunchTests.swift */; };
-		C3590EEF2714CBB900ADA2F8 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590EEE2714CBB900ADA2F8 /* Tests_macOS.swift */; };
-		C3590EF12714CBB900ADA2F8 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590EF02714CBB900ADA2F8 /* Tests_macOSLaunchTests.swift */; };
-		C3590EF22714CBB900ADA2F8 /* bloggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590ECA2714CBB700ADA2F8 /* bloggerApp.swift */; };
-		C3590EF32714CBB900ADA2F8 /* bloggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590ECA2714CBB700ADA2F8 /* bloggerApp.swift */; };
-		C3590EF42714CBB900ADA2F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590ECB2714CBB700ADA2F8 /* ContentView.swift */; };
-		C3590EF52714CBB900ADA2F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3590ECB2714CBB700ADA2F8 /* ContentView.swift */; };
-		C3590EF62714CBB900ADA2F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3590ECC2714CBB900ADA2F8 /* Assets.xcassets */; };
-		C3590EF72714CBB900ADA2F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3590ECC2714CBB900ADA2F8 /* Assets.xcassets */; };
+		38C807C2ED72A0B4341C4A3B /* Pods_Blogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B36D3F64CC8748722FC82E /* Pods_Blogger.framework */; };
+		BA29E4EE886B0C47705E044E /* Pods_Blogger_BloggerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024F618C22B85BD69DA6E29D /* Pods_Blogger_BloggerUITests.framework */; };
+		C3A52E102714D97000E76375 /* BloggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E0F2714D97000E76375 /* BloggerApp.swift */; };
+		C3A52E122714D97000E76375 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E112714D97000E76375 /* ContentView.swift */; };
+		C3A52E142714D97100E76375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A52E132714D97100E76375 /* Assets.xcassets */; };
+		C3A52E172714D97100E76375 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A52E162714D97100E76375 /* Preview Assets.xcassets */; };
+		C3A52E212714D97100E76375 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E202714D97100E76375 /* APIClientTests.swift */; };
+		C3A52E2B2714D97100E76375 /* BloggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E2A2714D97100E76375 /* BloggerUITests.swift */; };
+		C3A52E2D2714D97100E76375 /* BloggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E2C2714D97100E76375 /* BloggerUITestsLaunchTests.swift */; };
+		C3A52E42271616B200E76375 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E41271616B200E76375 /* APIClient.swift */; };
+		C3A52E442716175000E76375 /* APIClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E432716175000E76375 /* APIClientService.swift */; };
+		C3A52E4827161BA500E76375 /* FileReaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E4727161BA500E76375 /* FileReaderService.swift */; };
+		C3A52E4B27161BCF00E76375 /* FileReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E4A27161BCF00E76375 /* FileReaderTests.swift */; };
+		C3A52E4E27161DBA00E76375 /* mockBlogPostResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C3A52E4D27161DBA00E76375 /* mockBlogPostResponse.json */; };
+		C3A52E512716223E00E76375 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E502716223E00E76375 /* FileType.swift */; };
+		C3A52E542716229300E76375 /* FileReaderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E532716229300E76375 /* FileReaderError.swift */; };
+		C3A52E562716279100E76375 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E552716279100E76375 /* FileReader.swift */; };
+		C3A52E5B271770DE00E76375 /* Promises in Frameworks */ = {isa = PBXBuildFile; productRef = C3A52E5A271770DE00E76375 /* Promises */; };
+		C3A52E5D271770DE00E76375 /* PromisesTestHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = C3A52E5C271770DE00E76375 /* PromisesTestHelpers */; };
+		C3A52E5F2717722600E76375 /* JsonSerializerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E5E2717722600E76375 /* JsonSerializerService.swift */; };
+		C3A52E612717739200E76375 /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E602717739200E76375 /* JsonSerializer.swift */; };
+		C3A52E63271808EF00E76375 /* JsonSerializerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E62271808EF00E76375 /* JsonSerializerError.swift */; };
+		C3A52E652718090B00E76375 /* JsonSerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E642718090B00E76375 /* JsonSerializerTests.swift */; };
+		C3A52E692718136600E76375 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E682718136600E76375 /* BlogPost.swift */; };
+		C3A52E6B2718178500E76375 /* invalidMockBlogPostResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C3A52E6A271816AB00E76375 /* invalidMockBlogPostResponse.json */; };
+		C3A52E742719CADD00E76375 /* MockGenericJsonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E732719CADD00E76375 /* MockGenericJsonResponse.swift */; };
+		C3A52E782719CB7600E76375 /* mockGenericResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C3A52E772719CB7600E76375 /* mockGenericResponse.json */; };
+		C3A52E7C2719D21B00E76375 /* mockInvalidGenericResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C3A52E7B2719D21B00E76375 /* mockInvalidGenericResponse.json */; };
+		C3A52E7E2719FBED00E76375 /* MockAPIClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E45271618E400E76375 /* MockAPIClientService.swift */; };
+		C3A52E80271A082100E76375 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E7F271A082100E76375 /* NetworkingService.swift */; };
+		C3A52E82271A129000E76375 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E81271A129000E76375 /* NetworkError.swift */; };
+		C3A52E84271A12AA00E76375 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E83271A12AA00E76375 /* RequestType.swift */; };
+		C3A52E86271A12C000E76375 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E85271A12C000E76375 /* EndPoint.swift */; };
+		C3A52E8827234DDC00E76375 /* BaseUrlGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E8727234DDC00E76375 /* BaseUrlGenerator.swift */; };
+		C3A52E8A27234F3700E76375 /* NetworkingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A52E8927234F3700E76375 /* NetworkingServiceTests.swift */; };
+		C6F903FBAB0096FBA4B4317B /* Pods_BloggerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA584B92E3BDF960B15C0CAE /* Pods_BloggerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C3590EDF2714CBB900ADA2F8 /* PBXContainerItemProxy */ = {
+		C3A52E1D2714D97100E76375 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C3590EC52714CBB700ADA2F8 /* Project object */;
+			containerPortal = C3A52E042714D97000E76375 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C3590ED02714CBB900ADA2F8;
-			remoteInfo = "blogger (iOS)";
+			remoteGlobalIDString = C3A52E0B2714D97000E76375;
+			remoteInfo = Blogger;
 		};
-		C3590EEB2714CBB900ADA2F8 /* PBXContainerItemProxy */ = {
+		C3A52E272714D97100E76375 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C3590EC52714CBB700ADA2F8 /* Project object */;
+			containerPortal = C3A52E042714D97000E76375 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C3590ED62714CBB900ADA2F8;
-			remoteInfo = "blogger (macOS)";
+			remoteGlobalIDString = C3A52E0B2714D97000E76375;
+			remoteInfo = Blogger;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C3590ECA2714CBB700ADA2F8 /* bloggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bloggerApp.swift; sourceTree = "<group>"; };
-		C3590ECB2714CBB700ADA2F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C3590ECC2714CBB900ADA2F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C3590ED12714CBB900ADA2F8 /* blogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3590ED72714CBB900ADA2F8 /* blogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3590ED92714CBB900ADA2F8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		C3590EDE2714CBB900ADA2F8 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3590EE22714CBB900ADA2F8 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
-		C3590EE42714CBB900ADA2F8 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
-		C3590EEA2714CBB900ADA2F8 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3590EEE2714CBB900ADA2F8 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		C3590EF02714CBB900ADA2F8 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		024F618C22B85BD69DA6E29D /* Pods_Blogger_BloggerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blogger_BloggerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A746E90DA10AC2DF3E5A628 /* Pods-Blogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blogger.release.xcconfig"; path = "Target Support Files/Pods-Blogger/Pods-Blogger.release.xcconfig"; sourceTree = "<group>"; };
+		25D75A6AFA94DE8B6F54F504 /* Pods-BloggerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloggerTests.release.xcconfig"; path = "Target Support Files/Pods-BloggerTests/Pods-BloggerTests.release.xcconfig"; sourceTree = "<group>"; };
+		52B36D3F64CC8748722FC82E /* Pods_Blogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		538D13F7418F2963D16F8325 /* Pods-Blogger-BloggerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blogger-BloggerUITests.release.xcconfig"; path = "Target Support Files/Pods-Blogger-BloggerUITests/Pods-Blogger-BloggerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BA584B92E3BDF960B15C0CAE /* Pods_BloggerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BloggerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A52E0C2714D97000E76375 /* Blogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A52E0F2714D97000E76375 /* BloggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloggerApp.swift; sourceTree = "<group>"; };
+		C3A52E112714D97000E76375 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C3A52E132714D97100E76375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3A52E162714D97100E76375 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3A52E1C2714D97100E76375 /* BloggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A52E202714D97100E76375 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		C3A52E262714D97100E76375 /* BloggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A52E2A2714D97100E76375 /* BloggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloggerUITests.swift; sourceTree = "<group>"; };
+		C3A52E2C2714D97100E76375 /* BloggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3A52E392714D97A00E76375 /* Blogger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Blogger.entitlements; sourceTree = "<group>"; };
+		C3A52E41271616B200E76375 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		C3A52E432716175000E76375 /* APIClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientService.swift; sourceTree = "<group>"; };
+		C3A52E45271618E400E76375 /* MockAPIClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClientService.swift; sourceTree = "<group>"; };
+		C3A52E4727161BA500E76375 /* FileReaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReaderService.swift; sourceTree = "<group>"; };
+		C3A52E4A27161BCF00E76375 /* FileReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReaderTests.swift; sourceTree = "<group>"; };
+		C3A52E4D27161DBA00E76375 /* mockBlogPostResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockBlogPostResponse.json; sourceTree = "<group>"; };
+		C3A52E502716223E00E76375 /* FileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileType.swift; sourceTree = "<group>"; };
+		C3A52E532716229300E76375 /* FileReaderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReaderError.swift; sourceTree = "<group>"; };
+		C3A52E552716279100E76375 /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
+		C3A52E5E2717722600E76375 /* JsonSerializerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonSerializerService.swift; sourceTree = "<group>"; };
+		C3A52E602717739200E76375 /* JsonSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonSerializer.swift; sourceTree = "<group>"; };
+		C3A52E62271808EF00E76375 /* JsonSerializerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonSerializerError.swift; sourceTree = "<group>"; };
+		C3A52E642718090B00E76375 /* JsonSerializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonSerializerTests.swift; sourceTree = "<group>"; };
+		C3A52E682718136600E76375 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
+		C3A52E6A271816AB00E76375 /* invalidMockBlogPostResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = invalidMockBlogPostResponse.json; sourceTree = "<group>"; };
+		C3A52E732719CADD00E76375 /* MockGenericJsonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGenericJsonResponse.swift; sourceTree = "<group>"; };
+		C3A52E772719CB7600E76375 /* mockGenericResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockGenericResponse.json; sourceTree = "<group>"; };
+		C3A52E7B2719D21B00E76375 /* mockInvalidGenericResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockInvalidGenericResponse.json; sourceTree = "<group>"; };
+		C3A52E7F271A082100E76375 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		C3A52E81271A129000E76375 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C3A52E83271A12AA00E76375 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		C3A52E85271A12C000E76375 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		C3A52E8727234DDC00E76375 /* BaseUrlGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUrlGenerator.swift; sourceTree = "<group>"; };
+		C3A52E8927234F3700E76375 /* NetworkingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingServiceTests.swift; sourceTree = "<group>"; };
+		DAF083E365A7B437EC1BF5D0 /* Pods-Blogger-BloggerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blogger-BloggerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Blogger-BloggerUITests/Pods-Blogger-BloggerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDDB0DDE22A0143BB5B3FCE4 /* Pods-Blogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blogger.debug.xcconfig"; path = "Target Support Files/Pods-Blogger/Pods-Blogger.debug.xcconfig"; sourceTree = "<group>"; };
+		F269EAC3E1FCCDEBCC0B00FF /* Pods-BloggerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloggerTests.debug.xcconfig"; path = "Target Support Files/Pods-BloggerTests/Pods-BloggerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C3590ECE2714CBB900ADA2F8 /* Frameworks */ = {
+		C3A52E092714D97000E76375 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A52E5B271770DE00E76375 /* Promises in Frameworks */,
+				38C807C2ED72A0B4341C4A3B /* Pods_Blogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3590ED42714CBB900ADA2F8 /* Frameworks */ = {
+		C3A52E192714D97100E76375 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A52E5D271770DE00E76375 /* PromisesTestHelpers in Frameworks */,
+				C6F903FBAB0096FBA4B4317B /* Pods_BloggerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3590EDB2714CBB900ADA2F8 /* Frameworks */ = {
+		C3A52E232714D97100E76375 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3590EE72714CBB900ADA2F8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				BA29E4EE886B0C47705E044E /* Pods_Blogger_BloggerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C3590EC42714CBB700ADA2F8 = {
+		4CF94B7E14DF5FE8281F784F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C3590EC92714CBB700ADA2F8 /* Shared */,
-				C3590ED82714CBB900ADA2F8 /* macOS */,
-				C3590EE12714CBB900ADA2F8 /* Tests iOS */,
-				C3590EED2714CBB900ADA2F8 /* Tests macOS */,
-				C3590ED22714CBB900ADA2F8 /* Products */,
+				EDDB0DDE22A0143BB5B3FCE4 /* Pods-Blogger.debug.xcconfig */,
+				1A746E90DA10AC2DF3E5A628 /* Pods-Blogger.release.xcconfig */,
+				DAF083E365A7B437EC1BF5D0 /* Pods-Blogger-BloggerUITests.debug.xcconfig */,
+				538D13F7418F2963D16F8325 /* Pods-Blogger-BloggerUITests.release.xcconfig */,
+				F269EAC3E1FCCDEBCC0B00FF /* Pods-BloggerTests.debug.xcconfig */,
+				25D75A6AFA94DE8B6F54F504 /* Pods-BloggerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C3A52E032714D97000E76375 = {
+			isa = PBXGroup;
+			children = (
+				C3A52E0E2714D97000E76375 /* Blogger */,
+				C3A52E1F2714D97100E76375 /* BloggerTests */,
+				C3A52E292714D97100E76375 /* BloggerUITests */,
+				C3A52E0D2714D97000E76375 /* Products */,
+				C3A52E8B2723501900E76375 /* Frameworks */,
+				4CF94B7E14DF5FE8281F784F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
-		C3590EC92714CBB700ADA2F8 /* Shared */ = {
+		C3A52E0D2714D97000E76375 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C3590ECA2714CBB700ADA2F8 /* bloggerApp.swift */,
-				C3590ECB2714CBB700ADA2F8 /* ContentView.swift */,
-				C3590ECC2714CBB900ADA2F8 /* Assets.xcassets */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		C3590ED22714CBB900ADA2F8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C3590ED12714CBB900ADA2F8 /* blogger.app */,
-				C3590ED72714CBB900ADA2F8 /* blogger.app */,
-				C3590EDE2714CBB900ADA2F8 /* Tests iOS.xctest */,
-				C3590EEA2714CBB900ADA2F8 /* Tests macOS.xctest */,
+				C3A52E0C2714D97000E76375 /* Blogger.app */,
+				C3A52E1C2714D97100E76375 /* BloggerTests.xctest */,
+				C3A52E262714D97100E76375 /* BloggerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C3590ED82714CBB900ADA2F8 /* macOS */ = {
+		C3A52E0E2714D97000E76375 /* Blogger */ = {
 			isa = PBXGroup;
 			children = (
-				C3590ED92714CBB900ADA2F8 /* macOS.entitlements */,
+				C3A52E522716228500E76375 /* Errors */,
+				C3A52E4F2716222D00E76375 /* Models */,
+				C3A52E402716168100E76375 /* Protocols */,
+				C3A52E3A2714DAB300E76375 /* Services */,
+				C3A52E392714D97A00E76375 /* Blogger.entitlements */,
+				C3A52E0F2714D97000E76375 /* BloggerApp.swift */,
+				C3A52E112714D97000E76375 /* ContentView.swift */,
+				C3A52E132714D97100E76375 /* Assets.xcassets */,
+				C3A52E152714D97100E76375 /* Preview Content */,
 			);
-			path = macOS;
+			path = Blogger;
 			sourceTree = "<group>";
 		};
-		C3590EE12714CBB900ADA2F8 /* Tests iOS */ = {
+		C3A52E152714D97100E76375 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				C3590EE22714CBB900ADA2F8 /* Tests_iOS.swift */,
-				C3590EE42714CBB900ADA2F8 /* Tests_iOSLaunchTests.swift */,
+				C3A52E162714D97100E76375 /* Preview Assets.xcassets */,
 			);
-			path = "Tests iOS";
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C3590EED2714CBB900ADA2F8 /* Tests macOS */ = {
+		C3A52E1F2714D97100E76375 /* BloggerTests */ = {
 			isa = PBXGroup;
 			children = (
-				C3590EEE2714CBB900ADA2F8 /* Tests_macOS.swift */,
-				C3590EF02714CBB900ADA2F8 /* Tests_macOSLaunchTests.swift */,
+				C3A52E3D271610F800E76375 /* Mocks */,
+				C3A52E722719CAC700E76375 /* Models */,
+				C3A52E4C27161D8100E76375 /* Resources */,
+				C3A52E4927161BBB00E76375 /* Services */,
 			);
-			path = "Tests macOS";
+			path = BloggerTests;
+			sourceTree = "<group>";
+		};
+		C3A52E292714D97100E76375 /* BloggerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3A52E2A2714D97100E76375 /* BloggerUITests.swift */,
+				C3A52E2C2714D97100E76375 /* BloggerUITestsLaunchTests.swift */,
+			);
+			path = BloggerUITests;
+			sourceTree = "<group>";
+		};
+		C3A52E3A2714DAB300E76375 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C3A52E432716175000E76375 /* APIClientService.swift */,
+				C3A52E4727161BA500E76375 /* FileReaderService.swift */,
+				C3A52E5E2717722600E76375 /* JsonSerializerService.swift */,
+				C3A52E7F271A082100E76375 /* NetworkingService.swift */,
+				C3A52E8727234DDC00E76375 /* BaseUrlGenerator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C3A52E3D271610F800E76375 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C3A52E45271618E400E76375 /* MockAPIClientService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		C3A52E402716168100E76375 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C3A52E41271616B200E76375 /* APIClient.swift */,
+				C3A52E552716279100E76375 /* FileReader.swift */,
+				C3A52E602717739200E76375 /* JsonSerializer.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C3A52E4927161BBB00E76375 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C3A52E202714D97100E76375 /* APIClientTests.swift */,
+				C3A52E4A27161BCF00E76375 /* FileReaderTests.swift */,
+				C3A52E642718090B00E76375 /* JsonSerializerTests.swift */,
+				C3A52E8927234F3700E76375 /* NetworkingServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C3A52E4C27161D8100E76375 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3A52E6A271816AB00E76375 /* invalidMockBlogPostResponse.json */,
+				C3A52E4D27161DBA00E76375 /* mockBlogPostResponse.json */,
+				C3A52E772719CB7600E76375 /* mockGenericResponse.json */,
+				C3A52E7B2719D21B00E76375 /* mockInvalidGenericResponse.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C3A52E4F2716222D00E76375 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3A52E672718134300E76375 /* Remote */,
+				C3A52E662718133600E76375 /* Local */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C3A52E522716228500E76375 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				C3A52E532716229300E76375 /* FileReaderError.swift */,
+				C3A52E62271808EF00E76375 /* JsonSerializerError.swift */,
+				C3A52E81271A129000E76375 /* NetworkError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		C3A52E662718133600E76375 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				C3A52E502716223E00E76375 /* FileType.swift */,
+				C3A52E83271A12AA00E76375 /* RequestType.swift */,
+				C3A52E85271A12C000E76375 /* EndPoint.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		C3A52E672718134300E76375 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				C3A52E682718136600E76375 /* BlogPost.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		C3A52E722719CAC700E76375 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3A52E732719CADD00E76375 /* MockGenericJsonResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C3A52E8B2723501900E76375 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52B36D3F64CC8748722FC82E /* Pods_Blogger.framework */,
+				024F618C22B85BD69DA6E29D /* Pods_Blogger_BloggerUITests.framework */,
+				BA584B92E3BDF960B15C0CAE /* Pods_BloggerTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C3590ED02714CBB900ADA2F8 /* blogger (iOS) */ = {
+		C3A52E0B2714D97000E76375 /* Blogger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3590EFA2714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "blogger (iOS)" */;
+			buildConfigurationList = C3A52E302714D97100E76375 /* Build configuration list for PBXNativeTarget "Blogger" */;
 			buildPhases = (
-				C3590ECD2714CBB900ADA2F8 /* Sources */,
-				C3590ECE2714CBB900ADA2F8 /* Frameworks */,
-				C3590ECF2714CBB900ADA2F8 /* Resources */,
+				6156333D5CA4EADB75F58C63 /* [CP] Check Pods Manifest.lock */,
+				C3A52E082714D97000E76375 /* Sources */,
+				C3A52E092714D97000E76375 /* Frameworks */,
+				C3A52E0A2714D97000E76375 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "blogger (iOS)";
-			productName = "blogger (iOS)";
-			productReference = C3590ED12714CBB900ADA2F8 /* blogger.app */;
+			name = Blogger;
+			packageProductDependencies = (
+				C3A52E5A271770DE00E76375 /* Promises */,
+			);
+			productName = Blogger;
+			productReference = C3A52E0C2714D97000E76375 /* Blogger.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C3590ED62714CBB900ADA2F8 /* blogger (macOS) */ = {
+		C3A52E1B2714D97100E76375 /* BloggerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3590EFD2714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "blogger (macOS)" */;
+			buildConfigurationList = C3A52E332714D97100E76375 /* Build configuration list for PBXNativeTarget "BloggerTests" */;
 			buildPhases = (
-				C3590ED32714CBB900ADA2F8 /* Sources */,
-				C3590ED42714CBB900ADA2F8 /* Frameworks */,
-				C3590ED52714CBB900ADA2F8 /* Resources */,
+				3CE1EB1B2D9D1530227FA534 /* [CP] Check Pods Manifest.lock */,
+				C3A52E182714D97100E76375 /* Sources */,
+				C3A52E192714D97100E76375 /* Frameworks */,
+				C3A52E1A2714D97100E76375 /* Resources */,
+				E346D65F822AC32F3EF7AA4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C3A52E1E2714D97100E76375 /* PBXTargetDependency */,
 			);
-			name = "blogger (macOS)";
-			productName = "blogger (macOS)";
-			productReference = C3590ED72714CBB900ADA2F8 /* blogger.app */;
-			productType = "com.apple.product-type.application";
+			name = BloggerTests;
+			packageProductDependencies = (
+				C3A52E5C271770DE00E76375 /* PromisesTestHelpers */,
+			);
+			productName = BloggerTests;
+			productReference = C3A52E1C2714D97100E76375 /* BloggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C3590EDD2714CBB900ADA2F8 /* Tests iOS */ = {
+		C3A52E252714D97100E76375 /* BloggerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3590F002714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildConfigurationList = C3A52E362714D97100E76375 /* Build configuration list for PBXNativeTarget "BloggerUITests" */;
 			buildPhases = (
-				C3590EDA2714CBB900ADA2F8 /* Sources */,
-				C3590EDB2714CBB900ADA2F8 /* Frameworks */,
-				C3590EDC2714CBB900ADA2F8 /* Resources */,
+				D0B7BC79F6D844CB03A3A75F /* [CP] Check Pods Manifest.lock */,
+				C3A52E222714D97100E76375 /* Sources */,
+				C3A52E232714D97100E76375 /* Frameworks */,
+				C3A52E242714D97100E76375 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C3590EE02714CBB900ADA2F8 /* PBXTargetDependency */,
+				C3A52E282714D97100E76375 /* PBXTargetDependency */,
 			);
-			name = "Tests iOS";
-			productName = "Tests iOS";
-			productReference = C3590EDE2714CBB900ADA2F8 /* Tests iOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		C3590EE92714CBB900ADA2F8 /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C3590F032714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				C3590EE62714CBB900ADA2F8 /* Sources */,
-				C3590EE72714CBB900ADA2F8 /* Frameworks */,
-				C3590EE82714CBB900ADA2F8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C3590EEC2714CBB900ADA2F8 /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = C3590EEA2714CBB900ADA2F8 /* Tests macOS.xctest */;
+			name = BloggerUITests;
+			productName = BloggerUITests;
+			productReference = C3A52E262714D97100E76375 /* BloggerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C3590EC52714CBB700ADA2F8 /* Project object */ = {
+		C3A52E042714D97000E76375 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					C3590ED02714CBB900ADA2F8 = {
+					C3A52E0B2714D97000E76375 = {
 						CreatedOnToolsVersion = 13.0;
 					};
-					C3590ED62714CBB900ADA2F8 = {
+					C3A52E1B2714D97100E76375 = {
 						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C3A52E0B2714D97000E76375;
 					};
-					C3590EDD2714CBB900ADA2F8 = {
+					C3A52E252714D97100E76375 = {
 						CreatedOnToolsVersion = 13.0;
-						TestTargetID = C3590ED02714CBB900ADA2F8;
-					};
-					C3590EE92714CBB900ADA2F8 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = C3590ED62714CBB900ADA2F8;
+						TestTargetID = C3A52E0B2714D97000E76375;
 					};
 				};
 			};
-			buildConfigurationList = C3590EC82714CBB700ADA2F8 /* Build configuration list for PBXProject "blogger" */;
+			buildConfigurationList = C3A52E072714D97000E76375 /* Build configuration list for PBXProject "Blogger" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -248,44 +423,43 @@
 				en,
 				Base,
 			);
-			mainGroup = C3590EC42714CBB700ADA2F8;
-			productRefGroup = C3590ED22714CBB900ADA2F8 /* Products */;
+			mainGroup = C3A52E032714D97000E76375;
+			packageReferences = (
+				C3A52E59271770DE00E76375 /* XCRemoteSwiftPackageReference "promises.git" */,
+			);
+			productRefGroup = C3A52E0D2714D97000E76375 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C3590ED02714CBB900ADA2F8 /* blogger (iOS) */,
-				C3590ED62714CBB900ADA2F8 /* blogger (macOS) */,
-				C3590EDD2714CBB900ADA2F8 /* Tests iOS */,
-				C3590EE92714CBB900ADA2F8 /* Tests macOS */,
+				C3A52E0B2714D97000E76375 /* Blogger */,
+				C3A52E1B2714D97100E76375 /* BloggerTests */,
+				C3A52E252714D97100E76375 /* BloggerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C3590ECF2714CBB900ADA2F8 /* Resources */ = {
+		C3A52E0A2714D97000E76375 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3590EF62714CBB900ADA2F8 /* Assets.xcassets in Resources */,
+				C3A52E172714D97100E76375 /* Preview Assets.xcassets in Resources */,
+				C3A52E142714D97100E76375 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3590ED52714CBB900ADA2F8 /* Resources */ = {
+		C3A52E1A2714D97100E76375 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3590EF72714CBB900ADA2F8 /* Assets.xcassets in Resources */,
+				C3A52E7C2719D21B00E76375 /* mockInvalidGenericResponse.json in Resources */,
+				C3A52E782719CB7600E76375 /* mockGenericResponse.json in Resources */,
+				C3A52E6B2718178500E76375 /* invalidMockBlogPostResponse.json in Resources */,
+				C3A52E4E27161DBA00E76375 /* mockBlogPostResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3590EDC2714CBB900ADA2F8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3590EE82714CBB900ADA2F8 /* Resources */ = {
+		C3A52E242714D97100E76375 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -294,60 +468,156 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3CE1EB1B2D9D1530227FA534 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BloggerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6156333D5CA4EADB75F58C63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Blogger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0B7BC79F6D844CB03A3A75F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Blogger-BloggerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E346D65F822AC32F3EF7AA4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BloggerTests/Pods-BloggerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BloggerTests/Pods-BloggerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BloggerTests/Pods-BloggerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		C3590ECD2714CBB900ADA2F8 /* Sources */ = {
+		C3A52E082714D97000E76375 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3590EF42714CBB900ADA2F8 /* ContentView.swift in Sources */,
-				C3590EF22714CBB900ADA2F8 /* bloggerApp.swift in Sources */,
+				C3A52E512716223E00E76375 /* FileType.swift in Sources */,
+				C3A52E82271A129000E76375 /* NetworkError.swift in Sources */,
+				C3A52E612717739200E76375 /* JsonSerializer.swift in Sources */,
+				C3A52E4827161BA500E76375 /* FileReaderService.swift in Sources */,
+				C3A52E122714D97000E76375 /* ContentView.swift in Sources */,
+				C3A52E692718136600E76375 /* BlogPost.swift in Sources */,
+				C3A52E562716279100E76375 /* FileReader.swift in Sources */,
+				C3A52E102714D97000E76375 /* BloggerApp.swift in Sources */,
+				C3A52E442716175000E76375 /* APIClientService.swift in Sources */,
+				C3A52E63271808EF00E76375 /* JsonSerializerError.swift in Sources */,
+				C3A52E86271A12C000E76375 /* EndPoint.swift in Sources */,
+				C3A52E8827234DDC00E76375 /* BaseUrlGenerator.swift in Sources */,
+				C3A52E5F2717722600E76375 /* JsonSerializerService.swift in Sources */,
+				C3A52E542716229300E76375 /* FileReaderError.swift in Sources */,
+				C3A52E80271A082100E76375 /* NetworkingService.swift in Sources */,
+				C3A52E42271616B200E76375 /* APIClient.swift in Sources */,
+				C3A52E84271A12AA00E76375 /* RequestType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3590ED32714CBB900ADA2F8 /* Sources */ = {
+		C3A52E182714D97100E76375 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3590EF52714CBB900ADA2F8 /* ContentView.swift in Sources */,
-				C3590EF32714CBB900ADA2F8 /* bloggerApp.swift in Sources */,
+				C3A52E742719CADD00E76375 /* MockGenericJsonResponse.swift in Sources */,
+				C3A52E8A27234F3700E76375 /* NetworkingServiceTests.swift in Sources */,
+				C3A52E4B27161BCF00E76375 /* FileReaderTests.swift in Sources */,
+				C3A52E652718090B00E76375 /* JsonSerializerTests.swift in Sources */,
+				C3A52E212714D97100E76375 /* APIClientTests.swift in Sources */,
+				C3A52E7E2719FBED00E76375 /* MockAPIClientService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3590EDA2714CBB900ADA2F8 /* Sources */ = {
+		C3A52E222714D97100E76375 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3590EE52714CBB900ADA2F8 /* Tests_iOSLaunchTests.swift in Sources */,
-				C3590EE32714CBB900ADA2F8 /* Tests_iOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3590EE62714CBB900ADA2F8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3590EF12714CBB900ADA2F8 /* Tests_macOSLaunchTests.swift in Sources */,
-				C3590EEF2714CBB900ADA2F8 /* Tests_macOS.swift in Sources */,
+				C3A52E2B2714D97100E76375 /* BloggerUITests.swift in Sources */,
+				C3A52E2D2714D97100E76375 /* BloggerUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C3590EE02714CBB900ADA2F8 /* PBXTargetDependency */ = {
+		C3A52E1E2714D97100E76375 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C3590ED02714CBB900ADA2F8 /* blogger (iOS) */;
-			targetProxy = C3590EDF2714CBB900ADA2F8 /* PBXContainerItemProxy */;
+			target = C3A52E0B2714D97000E76375 /* Blogger */;
+			targetProxy = C3A52E1D2714D97100E76375 /* PBXContainerItemProxy */;
 		};
-		C3590EEC2714CBB900ADA2F8 /* PBXTargetDependency */ = {
+		C3A52E282714D97100E76375 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C3590ED62714CBB900ADA2F8 /* blogger (macOS) */;
-			targetProxy = C3590EEB2714CBB900ADA2F8 /* PBXContainerItemProxy */;
+			target = C3A52E0B2714D97000E76375 /* Blogger */;
+			targetProxy = C3A52E272714D97100E76375 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		C3590EF82714CBB900ADA2F8 /* Debug */ = {
+		C3A52E2E2714D97100E76375 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -398,15 +668,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		C3590EF92714CBB900ADA2F8 /* Release */ = {
+		C3A52E2F2714D97100E76375 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -451,134 +724,98 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-			};
-			name = Release;
-		};
-		C3590EFB2714CBB900ADA2F8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2262CQKPZT;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.connorblack.blogger;
-				PRODUCT_NAME = blogger;
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C3590EFC2714CBB900ADA2F8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2262CQKPZT;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.connorblack.blogger;
-				PRODUCT_NAME = blogger;
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		C3590EFE2714CBB900ADA2F8 /* Debug */ = {
+		C3A52E312714D97100E76375 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDDB0DDE22A0143BB5B3FCE4 /* Pods-Blogger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Blogger/Blogger.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Blogger/Preview Content\"";
 				DEVELOPMENT_TEAM = 2262CQKPZT;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.connorblack.blogger;
-				PRODUCT_NAME = blogger;
-				SDKROOT = macosx;
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.connorblack.Blogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
-		C3590EFF2714CBB900ADA2F8 /* Release */ = {
+		C3A52E322714D97100E76375 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A746E90DA10AC2DF3E5A628 /* Pods-Blogger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Blogger/Blogger.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Blogger/Preview Content\"";
 				DEVELOPMENT_TEAM = 2262CQKPZT;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.connorblack.blogger;
-				PRODUCT_NAME = blogger;
-				SDKROOT = macosx;
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.connorblack.Blogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
-		C3590F012714CBB900ADA2F8 /* Debug */ = {
+		C3A52E342714D97100E76375 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F269EAC3E1FCCDEBCC0B00FF /* Pods-BloggerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2262CQKPZT;
@@ -590,20 +827,21 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.connorblack.Tests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.connorblack.BloggerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "blogger (iOS)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blogger.app/Blogger";
 			};
 			name = Debug;
 		};
-		C3590F022714CBB900ADA2F8 /* Release */ = {
+		C3A52E352714D97100E76375 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25D75A6AFA94DE8B6F54F504 /* Pods-BloggerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2262CQKPZT;
@@ -615,116 +853,127 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.connorblack.Tests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.connorblack.BloggerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "blogger (iOS)";
-				VALIDATE_PRODUCT = YES;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blogger.app/Blogger";
 			};
 			name = Release;
 		};
-		C3590F042714CBB900ADA2F8 /* Debug */ = {
+		C3A52E372714D97100E76375 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAF083E365A7B437EC1BF5D0 /* Pods-Blogger-BloggerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2262CQKPZT;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.connorblack.Tests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.connorblack.BloggerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "blogger (macOS)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Blogger;
 			};
 			name = Debug;
 		};
-		C3590F052714CBB900ADA2F8 /* Release */ = {
+		C3A52E382714D97100E76375 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 538D13F7418F2963D16F8325 /* Pods-Blogger-BloggerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2262CQKPZT;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.connorblack.Tests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.connorblack.BloggerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "blogger (macOS)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Blogger;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C3590EC82714CBB700ADA2F8 /* Build configuration list for PBXProject "blogger" */ = {
+		C3A52E072714D97000E76375 /* Build configuration list for PBXProject "Blogger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3590EF82714CBB900ADA2F8 /* Debug */,
-				C3590EF92714CBB900ADA2F8 /* Release */,
+				C3A52E2E2714D97100E76375 /* Debug */,
+				C3A52E2F2714D97100E76375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3590EFA2714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "blogger (iOS)" */ = {
+		C3A52E302714D97100E76375 /* Build configuration list for PBXNativeTarget "Blogger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3590EFB2714CBB900ADA2F8 /* Debug */,
-				C3590EFC2714CBB900ADA2F8 /* Release */,
+				C3A52E312714D97100E76375 /* Debug */,
+				C3A52E322714D97100E76375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3590EFD2714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "blogger (macOS)" */ = {
+		C3A52E332714D97100E76375 /* Build configuration list for PBXNativeTarget "BloggerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3590EFE2714CBB900ADA2F8 /* Debug */,
-				C3590EFF2714CBB900ADA2F8 /* Release */,
+				C3A52E342714D97100E76375 /* Debug */,
+				C3A52E352714D97100E76375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3590F002714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+		C3A52E362714D97100E76375 /* Build configuration list for PBXNativeTarget "BloggerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3590F012714CBB900ADA2F8 /* Debug */,
-				C3590F022714CBB900ADA2F8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C3590F032714CBB900ADA2F8 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C3590F042714CBB900ADA2F8 /* Debug */,
-				C3590F052714CBB900ADA2F8 /* Release */,
+				C3A52E372714D97100E76375 /* Debug */,
+				C3A52E382714D97100E76375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3A52E59271770DE00E76375 /* XCRemoteSwiftPackageReference "promises.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/promises.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3A52E5A271770DE00E76375 /* Promises */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3A52E59271770DE00E76375 /* XCRemoteSwiftPackageReference "promises.git" */;
+			productName = Promises;
+		};
+		C3A52E5C271770DE00E76375 /* PromisesTestHelpers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3A52E59271770DE00E76375 /* XCRemoteSwiftPackageReference "promises.git" */;
+			productName = PromisesTestHelpers;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = C3590EC52714CBB700ADA2F8 /* Project object */;
+	rootObject = C3A52E042714D97000E76375 /* Project object */;
 }

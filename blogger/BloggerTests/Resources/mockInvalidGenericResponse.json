@@ -1,0 +1,9 @@
+{
+    "stringValue": 1,
+    "intValue": 10,
+    "boolValue": false,
+    "arrayOfStringValue": [
+        "String 1",
+        "String 2"
+    ]
+}
