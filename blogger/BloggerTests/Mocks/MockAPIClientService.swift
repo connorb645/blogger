@@ -31,6 +31,11 @@ struct MockAPIClientService: APIClient {
         }
     }
     
+    #warning("Unimplemented test")
+    func getImage() -> Promise<Data> {
+        return Promise(Data())
+    }
+    
     private func get<T: Decodable>(fromFile fileName: String) throws -> [T] {
         let data = try self.fileReader.readData(fromFileName: fileName, withFileType: .json)
         let toReturn: [T] = try jsonSerializer.decode(data: data)

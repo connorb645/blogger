@@ -12,6 +12,10 @@ import Nimble
 
 class NetworkingServiceTests: QuickSpec {
     override func spec() {
-        
+        describe("NetworkingService") {
+            context("When performing a get request") {
+                
+            }
+        }
     }
 }

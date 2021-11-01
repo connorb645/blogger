@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct BlogPost: Codable {
+struct Article: Codable, Identifiable, Hashable {
     let id: UUID
     let authorId: UUID
+    let contentId: UUID
     let title: String
 }
