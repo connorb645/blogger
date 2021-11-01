@@ -9,7 +9,7 @@ import Foundation
 
 protocol ArticleListViewRouterProtocol: Router {
     func showArticleDetail(_ articleAndAuthor: ArticleAndAuthor)
-    func presentUserProfile()
+    func presentUserProfileOrLogin(isAuthenticated: Bool)
 }
 
 class ArticleListViewRouter: Router, ArticleListViewRouterProtocol {
@@ -17,13 +17,31 @@ class ArticleListViewRouter: Router, ArticleListViewRouterProtocol {
         let router = ArticleDetailViewRouter(isPresented: isPushing)
         let viewModel = ArticleDetailViewModel(articleAndAuthor: articleAndAuthor)
         let view = ArticleDetailView(router: router, viewModel: viewModel)
+        
         push(view)
     }
     
-    func presentUserProfile() {
+    func presentUserProfileOrLogin(isAuthenticated: Bool) {
+        if isAuthenticated {
+            presentUserProfile()
+        } else {
+            presentLogin()
+        }
+    }
+    
+    private func presentLogin() {
+        let router = LoginViewRouter(isPresented: isPresenting)
+        let viewModel = LoginViewModel()
+        let view = LoginView(router: router, viewModel: viewModel)
+        
+        present(view, router: router)
+    }
+    
+    private func presentUserProfile() {
         let router = UserProfileViewRouter(isPresented: isPresenting)
         let viewModel = UserProfileViewModel(user: nil)
         let view = UserProfileView(router: router, viewModel: viewModel)
+        
         present(view, router: router)
     }
 }

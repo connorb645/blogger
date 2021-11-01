@@ -19,15 +19,12 @@ struct UserProfileView<R: UserProfileViewRouterProtocol>: View {
         self.viewModel = viewModel
     }
     
-        
     var body: some View {
         Button {
-//            viewModel.isPresented.wrappedValue.toggle()
-//            isDismissed = true
+            router.presentFakeView()
         } label: {
-            Text("Dismiss")
+            Text("Next")
         }
-//        .preference(key: DismissPreferenceKey.self, value: isDismissed)
-
+        .navigation(router)
     }
 }

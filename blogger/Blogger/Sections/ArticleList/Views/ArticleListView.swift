@@ -25,20 +25,23 @@ struct ArticleListView<R: ArticleListViewRouterProtocol>: View {
                 } label: {
                     ListItemView(heading: articleAndAuthor.article.title,
                                  subHeading: articleAndAuthor.author.fullName)
+                        .foregroundColor(.black)
                 }
 
             }
-        }
-        .toolbar {
-            Button {
-                router.presentUserProfile()
-            } label: {
-                Image(systemName: "person")
-                    .foregroundColor(.black)
+            .toolbar {
+                Button {
+                    router.presentUserProfileOrLogin(isAuthenticated: viewModel.authService.isAuthenticated)
+                } label: {
+                    Image(systemName: "person")
+                        .foregroundColor(.black)
+                }
             }
+            
+            .navigationTitle("All Articles")
         }
         .navigation(router)
         .sheet(router)
-        .navigationTitle("All Articles")
+        
     }
 }

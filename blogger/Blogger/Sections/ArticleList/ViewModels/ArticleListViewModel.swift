@@ -12,12 +12,16 @@ import SwiftUI
 final class ArticleListViewModel: ObservableObject {
     
     private let apiClient: APIClient
+    let authService: AuthSessionService
     
     @Published var articles: [ArticleAndAuthor] = []
     @Published var presentingUserProfile = false
     
-    init(apiClient: APIClient = APIClientService()) {
+    init(apiClient: APIClient = APIClientService(),
+         authService: AuthSessionService = AuthSessionService()) {
         self.apiClient = apiClient
+        self.authService = authService
+        
         fetchArticles()
     }
     

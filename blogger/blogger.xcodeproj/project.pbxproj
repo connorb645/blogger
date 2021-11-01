@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		38C807C2ED72A0B4341C4A3B /* Pods_Blogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B36D3F64CC8748722FC82E /* Pods_Blogger.framework */; };
 		BA29E4EE886B0C47705E044E /* Pods_Blogger_BloggerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024F618C22B85BD69DA6E29D /* Pods_Blogger_BloggerUITests.framework */; };
-		C309C779272EAC400006A896 /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309C778272EAC400006A896 /* NavigationLazyView.swift */; };
 		C309C77C27305BDC0006A896 /* ArticleListViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309C77B27305BDC0006A896 /* ArticleListViewRouter.swift */; };
 		C309C77E27305C370006A896 /* Router+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309C77D27305C370006A896 /* Router+Extensions.swift */; };
 		C309C78127305C960006A896 /* NavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309C78027305C960006A896 /* NavigationModifier.swift */; };
@@ -17,6 +16,7 @@
 		C309C78527305CC60006A896 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309C78427305CC60006A896 /* Router.swift */; };
 		C309C788273087EA0006A896 /* ArticleDetailViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309C787273087EA0006A896 /* ArticleDetailViewRouter.swift */; };
 		C309C78C2730906E0006A896 /* UserProfileViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309C78B2730906E0006A896 /* UserProfileViewRouter.swift */; };
+		C309C78F273095D80006A896 /* LoginViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309C78E273095D80006A896 /* LoginViewRouter.swift */; };
 		C30C47EC27288A8700B54C94 /* OS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C47EB27288A8700B54C94 /* OS.swift */; };
 		C30C47F327288CD300B54C94 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C47F227288CD300B54C94 /* LoginView.swift */; };
 		C30C47F527288D2200B54C94 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C47F427288D2200B54C94 /* LoginViewModel.swift */; };
@@ -34,7 +34,6 @@
 		C30C481A272C37A500B54C94 /* ArticleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C4819272C37A500B54C94 /* ArticleDetailViewModel.swift */; };
 		C30C481C272C37B300B54C94 /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C481B272C37B300B54C94 /* ArticleDetailView.swift */; };
 		C30C4823272C397400B54C94 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C4822272C397400B54C94 /* RootView.swift */; };
-		C30C4825272C397F00B54C94 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C4824272C397F00B54C94 /* Coordinator.swift */; };
 		C30C4828272C3EB300B54C94 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C4827272C3EB300B54C94 /* View+Extensions.swift */; };
 		C30C482C272C3FEE00B54C94 /* StubGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C482B272C3FEE00B54C94 /* StubGenerator.swift */; };
 		C30C4831272D3EBC00B54C94 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C4830272D3EBC00B54C94 /* UserProfileViewModel.swift */; };
@@ -104,7 +103,6 @@
 		52B36D3F64CC8748722FC82E /* Pods_Blogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		538D13F7418F2963D16F8325 /* Pods-Blogger-BloggerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blogger-BloggerUITests.release.xcconfig"; path = "Target Support Files/Pods-Blogger-BloggerUITests/Pods-Blogger-BloggerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BA584B92E3BDF960B15C0CAE /* Pods_BloggerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BloggerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C309C778272EAC400006A896 /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
 		C309C77B27305BDC0006A896 /* ArticleListViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewRouter.swift; sourceTree = "<group>"; };
 		C309C77D27305C370006A896 /* Router+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router+Extensions.swift"; sourceTree = "<group>"; };
 		C309C78027305C960006A896 /* NavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModifier.swift; sourceTree = "<group>"; };
@@ -112,6 +110,7 @@
 		C309C78427305CC60006A896 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C309C787273087EA0006A896 /* ArticleDetailViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewRouter.swift; sourceTree = "<group>"; };
 		C309C78B2730906E0006A896 /* UserProfileViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewRouter.swift; sourceTree = "<group>"; };
+		C309C78E273095D80006A896 /* LoginViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewRouter.swift; sourceTree = "<group>"; };
 		C30C47EB27288A8700B54C94 /* OS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OS.swift; sourceTree = "<group>"; };
 		C30C47F227288CD300B54C94 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C30C47F427288D2200B54C94 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -129,7 +128,6 @@
 		C30C4819272C37A500B54C94 /* ArticleDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewModel.swift; sourceTree = "<group>"; };
 		C30C481B272C37B300B54C94 /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 		C30C4822272C397400B54C94 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		C30C4824272C397F00B54C94 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C30C4827272C3EB300B54C94 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		C30C482B272C3FEE00B54C94 /* StubGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubGenerator.swift; sourceTree = "<group>"; };
 		C30C4830272D3EBC00B54C94 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
@@ -263,6 +261,14 @@
 			path = Routers;
 			sourceTree = "<group>";
 		};
+		C309C78D273095C70006A896 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				C309C78E273095D80006A896 /* LoginViewRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
 		C30C47ED27288C2700B54C94 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +293,7 @@
 		C30C47EF27288C4D00B54C94 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				C309C78D273095C70006A896 /* Routers */,
 				C30C47F127288C9E00B54C94 /* ViewModels */,
 				C30C47F027288C9500B54C94 /* Views */,
 			);
@@ -348,7 +355,6 @@
 			children = (
 				C30C480C2729E6AE00B54C94 /* ListItemView.swift */,
 				C3FC47E8272D68AF0067D011 /* BaseSheetView.swift */,
-				C309C778272EAC400006A896 /* NavigationLazyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -377,14 +383,6 @@
 				C30C4819272C37A500B54C94 /* ArticleDetailViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		C30C481F272C394F00B54C94 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				C30C4824272C397F00B54C94 /* Coordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		C30C4826272C3EA100B54C94 /* Extensions */ = {
@@ -449,7 +447,6 @@
 			children = (
 				C309C77F27305C880006A896 /* Modifiers */,
 				C30C4826272C3EA100B54C94 /* Extensions */,
-				C30C481F272C394F00B54C94 /* Coordinator */,
 				C30C47EE27288C3C00B54C94 /* Sections */,
 				C30C47ED27288C2700B54C94 /* Helpers */,
 				C3A52E522716228500E76375 /* Errors */,
@@ -874,8 +871,8 @@
 				C30C47FF2729DE3B00B54C94 /* AuthSessionService.swift in Sources */,
 				C309C77E27305C370006A896 /* Router+Extensions.swift in Sources */,
 				C3A52E692718136600E76375 /* Article.swift in Sources */,
-				C30C4825272C397F00B54C94 /* Coordinator.swift in Sources */,
 				C30C481A272C37A500B54C94 /* ArticleDetailViewModel.swift in Sources */,
+				C309C78F273095D80006A896 /* LoginViewRouter.swift in Sources */,
 				C30C4831272D3EBC00B54C94 /* UserProfileViewModel.swift in Sources */,
 				C30C4813272A07A700B54C94 /* ArticleAndAuthor.swift in Sources */,
 				C30C47F327288CD300B54C94 /* LoginView.swift in Sources */,
@@ -893,7 +890,6 @@
 				C30C481C272C37B300B54C94 /* ArticleDetailView.swift in Sources */,
 				C309C78127305C960006A896 /* NavigationModifier.swift in Sources */,
 				C3A52E5F2717722600E76375 /* JsonSerializerService.swift in Sources */,
-				C309C779272EAC400006A896 /* NavigationLazyView.swift in Sources */,
 				C3A52E542716229300E76375 /* FileReaderError.swift in Sources */,
 				C30C480F272A042900B54C94 /* RoutingError.swift in Sources */,
 				C3A52E80271A082100E76375 /* NetworkingService.swift in Sources */,

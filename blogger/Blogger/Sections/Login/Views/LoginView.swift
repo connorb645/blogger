@@ -7,9 +7,15 @@
 
 import SwiftUI
 
-struct LoginView: View {
+struct LoginView<R: LoginViewRouterProtocol>: View {
     
     @ObservedObject var viewModel: LoginViewModel
+    @StateObject var router: R
+    
+    init(router: R, viewModel: LoginViewModel) {
+        self._router = StateObject(wrappedValue: router)
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         VStack {
@@ -26,6 +32,8 @@ struct LoginView: View {
                     viewModel.login()
                 }
             }
+            
+            .navigationTitle("Login")
         }
     }
 }
@@ -33,7 +41,8 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            LoginView(viewModel: .init())
+            LoginView(router: LoginViewRouter(isPresented: .constant(false)),
+                      viewModel: .init())
         }
     }
 }

@@ -14,7 +14,7 @@ struct NavigationModifier: ViewModifier {
     
     var isActive: Binding<Bool> {
         Binding {
-            self.presentingView != nil
+            return self.presentingView != nil
         } set: {
             if !$0 {
                 self.presentingView = nil

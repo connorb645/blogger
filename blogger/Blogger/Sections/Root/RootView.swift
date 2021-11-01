@@ -11,7 +11,7 @@ struct RootView: View {
         
     var body: some View {
         NavigationView {
-            ArticleListView(router: ArticleListViewRouter(isPresented: .constant(true)),
+            ArticleListView(router: ArticleListViewRouter(isPresented: .constant(false)),
                             viewModel: .init())
         }
     }
