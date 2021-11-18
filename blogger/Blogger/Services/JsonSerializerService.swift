@@ -11,6 +11,7 @@ struct JsonSerializerService: JsonSerializer {
     
     func decode<T>(data: Data) throws -> T where T : Decodable {
         let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
         do {
             return try decoder.decode(T.self, from: data)
         } catch (let error) {
@@ -20,6 +21,7 @@ struct JsonSerializerService: JsonSerializer {
     
     func encode<T>(object: T) throws -> Data where T : Encodable {
         let encoder = JSONEncoder()
+        encoder.dateEncodingStrategy = .iso8601
         do {
             return try encoder.encode(object)
         } catch (let error) {

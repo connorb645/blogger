@@ -17,21 +17,32 @@ struct ArticleListView<R: ArticleListViewRouterProtocol>: View {
     }
     
     var body: some View {
-        List {
-            ForEach(viewModel.articles, id: \.self) { articleAndAuthor in
-                
-                Button {
-                    router.showArticleDetail(articleAndAuthor)
-                } label: {
-                    ListItemView(heading: articleAndAuthor.article.title,
-                                 subHeading: articleAndAuthor.author.fullName)
-                        .foregroundColor(.black)
-                }
+        VStack {
+            List {
+                ForEach(viewModel.articlesAndAuthors, id: \.self) { articleAndAuthor in
+                    
+                    Button {
+                        router.showArticleDetail(articleAndAuthor)
+                    } label: {
+                        ListItemView(heading: articleAndAuthor.article.title,
+                                     subHeading: articleAndAuthor.author.fullName)
+                            .foregroundColor(.black)
+                    }
 
+                }
+            }.frame(maxHeight: .infinity)
+            
+            Button {
+                router.presentDiagnostics()
+            } label: {
+                CBText(text: Bundle.main.releaseVersionNumber ?? "", textType: .subHeading, alignment: .center)
             }
+            
             .toolbar {
                 Button {
-                    router.presentUserProfileOrLogin(isAuthenticated: viewModel.authService.isAuthenticated)
+                    Task {
+                        router.presentUserProfileOrLogin(isAuthenticated: await viewModel.isAuthenticated)
+                    }
                 } label: {
                     Image(systemName: "person")
                         .foregroundColor(.black)
@@ -39,6 +50,7 @@ struct ArticleListView<R: ArticleListViewRouterProtocol>: View {
             }
             
             .navigationTitle("All Articles")
+
         }
         .navigation(router)
         .sheet(router)

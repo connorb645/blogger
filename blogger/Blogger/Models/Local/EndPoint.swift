@@ -11,11 +11,12 @@ enum EndPoint {
     case articles
     case article(id: UUID)
     case usersArticles(id: UUID)
-    case document(id: UUID)
     case login
     case signUp
     case user(id: UUID)
     case currentUser
+    case file(key: String)
+    case currentDate
     
     var path: String {
         switch self {
@@ -25,8 +26,6 @@ enum EndPoint {
             return "/articles/\(id)"
         case .usersArticles(let id):
             return "/users/\(id)/articles"
-        case .document(let id):
-            return "/document/\(id)"
         case .login:
             return "/session/login"
         case .signUp:
@@ -35,6 +34,10 @@ enum EndPoint {
             return "/users/\(id)"
         case .currentUser:
             return "/users/current"
+        case .file(let key):
+            return "/files/\(key)"
+        case .currentDate:
+            return "/session/current-date"
         }
     }
 }

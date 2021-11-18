@@ -8,5 +8,5 @@
 import Foundation
 
 enum UserDefaultsKey: String {
-    case authToken
+    case authDetails
 }

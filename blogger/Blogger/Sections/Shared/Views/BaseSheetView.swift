@@ -24,6 +24,7 @@ struct BaseSheetView<Content: View>: View {
                             .foregroundColor(.black)
                     }
                 }
+                .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

@@ -6,43 +6,47 @@
 //
 
 import Foundation
-import Promises
 import SwiftUI
 
 final class ArticleListViewModel: ObservableObject {
     
-    private let apiClient: APIClient
-    let authService: AuthSessionService
+    private let articleAPIClient: ArticleAPIClient
+    private let sessionAPIClient: SessionAPIClient
     
-    @Published var articles: [ArticleAndAuthor] = []
-    @Published var presentingUserProfile = false
+    @Published var articlesAndAuthors: [ArticleAndAuthor] = []
     
-    init(apiClient: APIClient = APIClientService(),
-         authService: AuthSessionService = AuthSessionService()) {
-        self.apiClient = apiClient
-        self.authService = authService
+    init(articleAPIClient: ArticleAPIClient = APIClientService(),
+         sessionAPIClient: SessionAPIClient = APIClientService()) {
+        self.articleAPIClient = articleAPIClient
+        self.sessionAPIClient = sessionAPIClient
         
-        fetchArticles()
+        Task {
+            await fetchArticles()
+        }
     }
     
-    private func fetchArticles() {
-        apiClient.getAllArticles()
-            .then { self.fetchAuthors(for: $0) }
-            .then { articlesAndAuthors in
-                self.articles = articlesAndAuthors
+    private func fetchArticles() async {
+        do {
+            
+            let articlesAndAuthors = try await articleAPIClient.articlesAndAuthors()
+            DispatchQueue.main.async {
+                self.articlesAndAuthors = articlesAndAuthors ?? []
             }
-            .catch { error in
+        } catch (let error) {
+            print(error.localizedDescription)
+        }
+    }
+    
+    var isAuthenticated: Bool {
+        get async {
+            do {
+                let isAuthenticated = try await sessionAPIClient.isAuthenticated
+                return isAuthenticated
+            } catch (let error) {
                 print(error.localizedDescription)
+                return false
             }
-    }
-    
-    private func fetchAuthors(for articles: [Article]) -> Promise<[ArticleAndAuthor]> {
-        return all(articles.map { article in
-            self.apiClient.getUser(id: article.authorId)
-                .then { author in
-                    return ArticleAndAuthor(article: article, author: author)
-                }
-        })
+        }
     }
     
 }

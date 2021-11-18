@@ -8,8 +8,11 @@
 import Foundation
 
 struct Article: Codable, Identifiable, Hashable {
-    let id: UUID
-    let authorId: UUID
-    let contentId: UUID
-    let title: String
+    var id: UUID
+    var title: String
+    var authorId: UUID
+    var contentKey: String
+    var createdAt: Date?
+    var updatedAt: Date?
 }
+

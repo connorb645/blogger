@@ -9,9 +9,12 @@ import Foundation
 
 struct User: Codable, Hashable {
     let id: UUID
-    let emailAddress: String
     let firstName: String
     let secondName: String
+    let emailAddress: String
+    let createdAt: Date
+    let updatedAt: Date
+    let profilePictureKey: String
     
     var fullName: String {
         "\(firstName) \(secondName)"

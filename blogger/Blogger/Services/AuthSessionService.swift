@@ -7,30 +7,36 @@
 
 import Foundation
 
-struct AuthSessionService {
+class AuthSessionService {
     
     private let userDefaults: UserDefaults
     
-    private let authTokenKey = UserDefaultsKey.authToken.rawValue
+    private let authDetailsKey = UserDefaultsKey.authDetails.rawValue
         
     init(userDefaults: UserDefaults = UserDefaults.standard) {
         self.userDefaults = userDefaults
     }
     
-    var isAuthenticated: Bool {
-        return authToken != nil
-    }
-    
-    var authToken: String? {
-        get {
-            return userDefaults.string(forKey: authTokenKey)
-        }
+    var authDetails: AuthenticationDetails? {
         set {
-            userDefaults.set(newValue, forKey: authTokenKey)
+            do {
+                try userDefaults.setObject(newValue, forKey: authDetailsKey)
+            } catch (let e) {
+                print(e.localizedDescription)
+            }
+        }
+        get {
+            do {
+                let authDetail = try userDefaults.getObject(forKey: authDetailsKey, castTo: AuthenticationDetails.self)
+                return authDetail
+            } catch (let e) {
+                print(e.localizedDescription)
+                return nil
+            }
         }
     }
     
-    func removeAuthToken() {
-        userDefaults.removeObject(forKey: authTokenKey)
+    func removeAuthDetails() {
+        authDetails = nil
     }
 }

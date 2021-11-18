@@ -9,12 +9,9 @@ import Foundation
 import SwiftUI
 
 protocol UserProfileViewRouterProtocol: Router {
-    func presentFakeView()
+    
 }
 
 class UserProfileViewRouter: Router, UserProfileViewRouterProtocol {
-    func presentFakeView() {
-        let view = Text("Blashhhhhhh")
-        push(view)
-    }
+    
 }

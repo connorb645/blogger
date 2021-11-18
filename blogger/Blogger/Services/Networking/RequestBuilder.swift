@@ -15,7 +15,6 @@ struct RequestBuilder {
         self.baseUrlGenerator = baseUrlGenerator
     }
     
-    #warning("No tests")
     public func request(for endPoint: EndPoint,
                         requestType: RequestType,
                         authType: AuthType?,

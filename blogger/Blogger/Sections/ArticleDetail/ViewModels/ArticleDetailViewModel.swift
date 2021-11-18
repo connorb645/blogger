@@ -10,26 +10,31 @@ import MarkdownUI
 
 final class ArticleDetailViewModel: ObservableObject {
     
-    private let apiClient: APIClient
+    private let articleAPIClient: ArticleAPIClient
+    private let fileAPIClient: FileAPIClient
     
     @Published var articleAndAuthor: ArticleAndAuthor
     @Published var markdown: Document?
     
     init(articleAndAuthor: ArticleAndAuthor,
-         apiClient: APIClient = APIClientService()) {
+         articleAPIClient: ArticleAPIClient = APIClientService(),
+         fileAPIClient: FileAPIClient = APIClientService()) {
         self.articleAndAuthor = articleAndAuthor
-        self.apiClient = apiClient
+        self.articleAPIClient = articleAPIClient
+        self.fileAPIClient = fileAPIClient
         
-        loadData()
+        Task {
+            await loadData()
+        }
     }
     
-    private func loadData() {
-        apiClient.getArticleDocument(id: articleAndAuthor.article.contentId)
-            .then { markdownString in
-                self.markdown = Document(stringLiteral: markdownString)
-            }
-            .catch { error in
-                print(error)
-            }
+    private func loadData() async {
+        do {
+            let fileDownloadUrl = try await fileAPIClient.downloadUrl(for: articleAndAuthor.article.contentKey)
+            #warning("We need a helper to download markdown!")
+            markdown = Document(stringLiteral: markdownString)
+        } catch (let error) {
+            print(error.localizedDescription)
+        }
     }
 }

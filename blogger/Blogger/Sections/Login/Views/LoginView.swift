@@ -29,7 +29,13 @@ struct LoginView<R: LoginViewRouterProtocol>: View {
                     
                 
                 Button("Let's Go") {
-                    viewModel.login()
+                    Task {
+                        let successfulLogin = await viewModel.login()
+                        
+                        if successfulLogin {
+                            router.dismiss()
+                        }
+                    }
                 }
             }
             

@@ -6,29 +6,41 @@
 //
 
 import Foundation
-import Promises
 
 class LoginViewModel: ObservableObject {
     
     var authService: AuthSessionService
-    private let apiClient: APIClient
+    private let sessionAPIClient: SessionAPIClient
     
     @Published var emailAddressText: String = ""
     @Published var passwordText: String = ""
     
     init(authService: AuthSessionService = AuthSessionService(),
-         apiClient: APIClient = APIClientService()) {
+         sessionAPIClient: SessionAPIClient = APIClientService()) {
         self.authService = authService
-        self.apiClient = apiClient
+        self.sessionAPIClient = sessionAPIClient
     }
     
-    func login() {
-        apiClient.login(emailAddress: emailAddressText.lowercased(), password: passwordText)
-            .then { authResult in
-                self.authService.authToken = authResult.token
-                print("Figure out how to dismiss with my new navigation")
-            }.catch { error in
-                print(error)
+    func login() async -> Bool {
+        do {
+            let authResult = try await sessionAPIClient.login(emailAddress: emailAddressText.lowercased(),
+                                                       password: passwordText)
+            
+            guard let accessToken = authResult?.accessToken,
+                  let refreshToken = authResult?.refreshToken,
+                  let accessTokenExpiry = authResult?.accessTokenExpiry else {
+                return false
             }
+            
+            let authDetails = AuthenticationDetails(authToken: accessToken,
+                                                    refreshToken: refreshToken,
+                                                    authTokenExpiry: accessTokenExpiry)
+            authService.authDetails = authDetails
+            
+            return true
+        } catch(let error) {
+            print(error.localizedDescription)
+            return false
+        }
     }
 }
